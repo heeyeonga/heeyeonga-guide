@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#faf7f2">
+<meta name="robots" content="noindex,nofollow">
+<title>从机场到龟宜站 · 희연가 HEEYEONGA</title>
+<meta name="description" content="HEEYEONGA House Guide">
+<meta property="og:title" content="从机场到龟宜站 · 희연가 HEEYEONGA">
+<meta property="og:description" content="HEEYEONGA House Guide">
+<meta property="og:type" content="website">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#faf7f2; --card:#ffffff; --ink:#20252a; --muted:#6b737c; --line:#e7e1d6;
+  --accent:#2f6b5f; --accent-soft:#e8f0ec; --warm:#b4653a; --warm-soft:#fbf0e8;
+  --radius:16px; --shadow:0 1px 2px rgba(31,35,40,.05), 0 8px 24px rgba(31,35,40,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#15181b;--card:#1d2226;--ink:#eef1f3;--muted:#a2acb5;--line:#2c3339;
+        --accent:#7fc3b2;--accent-soft:#1f2f2c;--warm:#e0a077;--warm-soft:#2a2320;
+        --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Noto Sans JP","PingFang SC","Noto Sans SC","Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.65;letter-spacing:-.01em}
+a{color:var(--accent);text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 56px}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
+.top-in{max-width:760px;margin:0 auto;padding:8px 14px;display:flex;align-items:center;gap:10px}
+.home{display:flex;align-items:center;gap:6px;color:var(--ink);font-weight:700;font-size:14px;min-width:0}
+.home .hm{font-size:17px}
+.home .ht{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.langs{margin-left:auto;display:flex;gap:4px;background:var(--accent-soft);padding:3px;border-radius:999px;flex:0 0 auto}
+.langs a{font-size:12px;font-weight:700;padding:5px 9px;border-radius:999px;color:var(--accent);line-height:1;white-space:nowrap}
+.langs a.on{background:var(--card);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+
+/* hero */
+.hero{padding:26px 0 6px}
+.hero .ico{font-size:30px;line-height:1}
+.hero h1{font-size:27px;line-height:1.28;margin:8px 0 6px;letter-spacing:-.02em}
+.hero .lead{color:var(--muted);margin:0}
+
+/* info cards */
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 6px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 14px;box-shadow:var(--shadow)}
+.fact .k{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.02em}
+.fact .v{font-size:17px;font-weight:800;margin-top:2px}
+
+.callout{display:flex;gap:10px;align-items:flex-start;background:var(--warm-soft);border:1px solid color-mix(in srgb,var(--warm) 22%,transparent);
+  border-radius:14px;padding:12px 14px;margin:12px 0}
+.callout .ci{font-size:18px;line-height:1.3}
+.callout .cb{min-width:0}
+.callout p{margin:2px 0}
+.callout p:first-child{margin-top:0}
+.callout p:last-child{margin-bottom:0}
+
+/* quick nav */
+.qnav{margin:20px 0 4px}
+.qnav .qh{font-size:12px;font-weight:800;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin:0 0 8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:9px 14px;font-size:14px;font-weight:600;color:var(--ink);box-shadow:var(--shadow)}
+.chip:active{transform:scale(.98)}
+.chip.solid{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){.chip.solid{color:#10201c}}
+
+/* sections */
+h2.sec{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:800;
+  margin:30px 0 10px;padding-top:6px;display:flex;align-items:center;gap:8px}
+h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+h3.sub{font-size:19px;margin:22px 0 8px;letter-spacing:-.015em}
+h4.sub4{font-size:16px;margin:16px 0 4px}
+p{margin:9px 0}
+ul,ol{margin:10px 0;padding-left:1.35em}
+li{margin:5px 0}
+ol>li::marker{font-weight:800;color:var(--accent)}
+.step-desc{margin:4px 0 12px;color:var(--muted);font-size:15px}
+hr.rule{border:0;border-top:1px solid var(--line);margin:26px 0}
+code{background:var(--accent-soft);border-radius:6px;padding:1px 5px;font-size:.92em;font-weight:700}
+strong{font-weight:800}
+
+/* accordions */
+.acc{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;box-shadow:var(--shadow);overflow:hidden}
+.acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:14px 16px;font-weight:700;font-size:16px}
+.acc>summary::-webkit-details-marker{display:none}
+.acc>summary .acc-t{flex:1;min-width:0}
+.chev{width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);
+  transform:rotate(45deg);transition:transform .18s ease;margin-right:2px;flex:0 0 auto}
+.acc[open]>summary .chev{transform:rotate(-135deg)}
+.acc.lvl0{border-radius:var(--radius);margin:14px 0}
+.acc.lvl0>summary{font-size:18px;letter-spacing:-.01em;padding:16px 18px}
+.acc.lvl0[open]>summary{border-bottom:1px solid var(--line);background:linear-gradient(0deg,var(--accent-soft),transparent)}
+.acc-body{padding:6px 16px 16px}
+.acc.lvl0>.acc-body{padding:10px 18px 18px}
+.acc-body>.acc:first-child{margin-top:10px}
+
+/* figures */
+figure.shot{margin:14px 0;border-radius:14px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+figure.shot img{width:100%}
+figure.shot figcaption{font-size:13px;color:var(--muted);padding:8px 12px}
+
+/* page link cards */
+.pagelink{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:13px 15px;margin:9px 0;color:var(--ink);font-weight:700;box-shadow:var(--shadow)}
+.pagelink .pl-ic{font-size:20px;flex:0 0 auto}
+.pagelink .pl-t{flex:1;min-width:0}
+.pagelink .pl-t a{color:inherit;text-decoration:none}
+.pagelink .pl-ar{color:var(--accent);font-weight:800}
+.pagelink .pl-t em{color:var(--muted);font-weight:600;font-style:normal}
+.pagelink.off{opacity:.6}
+.backlink{margin:16px 0 0}
+.backlink a{font-weight:700;font-size:14px}
+
+/* language choice */
+.pick h1{font-size:24px}
+.picks{display:grid;gap:10px;margin:20px 0}
+.pick-card{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:16px 16px;box-shadow:var(--shadow);color:var(--ink)}
+.pick-card .fl{font-size:26px}
+.pick-card .pc-t{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.pick-card .pc-s{font-size:13px;color:var(--muted);font-weight:600;margin-top:1px}
+.pick-card .pl-ar{margin-left:auto;color:var(--accent);font-weight:800}
+
+.qr{margin:26px 0 8px;text-align:center}
+.qr h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:800;margin:0 0 10px}
+.qr .frame{display:inline-block;background:#fff;padding:12px;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.qr img{width:min(280px,72vw)}
+.foot{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center}
+.foot .brand{font-weight:800;color:var(--ink);letter-spacing:.02em}
+.top-to{position:fixed;right:16px;bottom:18px;width:42px;height:42px;border-radius:50%;background:var(--card);
+  border:1px solid var(--line);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;
+  color:var(--ink);font-weight:800;font-size:16px;z-index:20;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.top-to.on{opacity:1;pointer-events:auto}
+
+/* image zoom */
+figure.shot img{cursor:zoom-in}
+.lb{position:fixed;inset:0;background:rgba(12,14,16,.94);display:none;align-items:center;justify-content:center;
+  z-index:60;padding:14px;touch-action:pinch-zoom}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb .x{position:absolute;top:12px;right:14px;width:40px;height:40px;border-radius:50%;border:0;
+  background:rgba(255,255,255,.16);color:#fff;font-size:20px;line-height:1}
+@media (min-width:640px){
+  body{font-size:16.5px}
+  .hero h1{font-size:31px}
+}
+@media print{.top,.top-to,.qnav{display:none}.acc{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="home" href="index.html"><span class="hm">🏠</span><span class="ht">🇨🇳 HEEYEONGA 住宿指南</span></a>
+  <nav class="langs" aria-label="Language"><a href="ko.html" aria-label="KO">한국어</a><a href="en.html" aria-label="EN">EN</a><a class="on" aria-current="page" href="zh.html" aria-label="ZH">中文</a><a href="ja.html" aria-label="JA">日本語</a></nav>
+</div></header>
+<main class="wrap"><section class="hero" id="top"><div class="ico">🚇</div><h1>从机场到龟宜站</h1></section><h2 class="sec" id="地铁路线仁川机场--龟宜站">地铁路线：仁川机场 → 龟宜站</h2><h3 class="sub">路线概览</h3><ol><li>从仁川国际机场第 1 航站楼或第 2 航站楼乘坐机场铁路 AREX。</li><li>在弘大入口站下车。</li><li>换乘首尔地铁 2 号线。</li><li>乘坐 2 号线前往龟宜站。</li><li>在龟宜站下车。</li></ol><h3 class="sub">换乘信息</h3><ul><li>换乘站：弘大入口站</li><li>换乘路线：机场铁路 AREX → 2 号线</li><li>目的地：龟宜站</li></ul><h3 class="sub">提示</h3><p>在弘大入口站，请跟随 2 号线的指示牌前往换乘通道。车站内通常有英文、中文和日文标识。</p><h3 class="sub">地铁路线图片</h3><figure class="shot"><img src="assets/img_96b8b876fb.svg" alt="地铁路线：仁川机场 → 龟宜站" loading="lazy" decoding="async"></figure><p class="backlink"><a href="zh.html">← 返回住宿指南</a></p>
+<footer class="foot"><div class="brand">희연가 HEEYEONGA</div><div>희연가 HEEYEONGA</div></footer>
+</main>
+<a class="top-to" href="#top" aria-label="Top">↑</a>
+<div class="lb" id="lb" role="dialog" aria-label="Image"><img alt=""></div>
+<script>
+document.querySelectorAll('details.acc').forEach(function(d){
+  d.addEventListener('toggle', function(){});
+});
+var to=document.querySelector('.top-to');
+if(to){window.addEventListener('scroll',function(){to.classList.toggle('on',window.scrollY>600);},{passive:true});}
+(function(){
+  var lb=document.getElementById('lb');
+  if(!lb)return;
+  var big=lb.querySelector('img');
+  document.querySelectorAll('figure.shot img').forEach(function(im){
+    im.addEventListener('click',function(){big.src=im.src;big.alt=im.alt||'';lb.classList.add('on');});
+  });
+  lb.addEventListener('click',function(){lb.classList.remove('on');big.removeAttribute('src');});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
+})();
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var el=document.querySelector(a.getAttribute('href'));
+    if(!el)return;
+    e.preventDefault();
+    var d=el.closest('details');
+    while(d){d.open=true;d=d.parentElement?d.parentElement.closest('details'):null;}
+    setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},40);
+    history.replaceState(null,'',a.getAttribute('href'));
+  });
+});
+</script>
+</body></html>
