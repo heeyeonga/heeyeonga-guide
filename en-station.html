@@ -24,7 +24,7 @@
 }
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Noto Sans JP","PingFang SC","Noto Sans SC","Segoe UI",Roboto,sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Noto Sans JP","PingFang SC","Noto Sans SC","Noto Sans KR","Noto Sans CJK KR","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size:16px;line-height:1.65;letter-spacing:-.01em}
 a{color:var(--accent);text-decoration:none}
 img{max-width:100%;height:auto;display:block}
@@ -75,6 +75,8 @@ img{max-width:100%;height:auto;display:block}
 h2.sec{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:800;
   margin:30px 0 10px;padding-top:6px;display:flex;align-items:center;gap:8px}
 h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+h2.sec.plain{text-transform:none;letter-spacing:-.015em;font-size:20px;color:var(--ink);font-weight:800;margin:26px 0 6px}
+h2.sec.plain::after{display:none}
 h3.sub{font-size:19px;margin:22px 0 8px;letter-spacing:-.015em}
 h4.sub4{font-size:16px;margin:16px 0 4px}
 p{margin:9px 0}
@@ -123,7 +125,10 @@ figure.shot figcaption{font-size:13px;color:var(--muted);padding:8px 12px}
 .picks{display:grid;gap:10px;margin:20px 0}
 .pick-card{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);
   border-radius:var(--radius);padding:16px 16px;box-shadow:var(--shadow);color:var(--ink)}
-.pick-card .fl{font-size:26px}
+.pick-card .fl{width:40px;height:40px;border-radius:12px;background:var(--accent-soft);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;letter-spacing:.02em;flex:0 0 auto}
+.ico.badge-solo{display:inline-flex;width:44px;height:44px;border-radius:13px;background:var(--accent-soft);color:var(--accent);
+  align-items:center;justify-content:center;font-size:17px;font-weight:800;margin-bottom:2px}
 .pick-card .pc-t{font-weight:800;font-size:17px;letter-spacing:-.01em}
 .pick-card .pc-s{font-size:13px;color:var(--muted);font-weight:600;margin-top:1px}
 .pick-card .pl-ar{margin-left:auto;color:var(--accent);font-weight:800}
@@ -156,10 +161,10 @@ figure.shot img{cursor:zoom-in}
 </head>
 <body>
 <header class="top"><div class="top-in">
-  <a class="home" href="index.html"><span class="hm">🏠</span><span class="ht">🇺🇸 HEEYEONGA House Guide</span></a>
+  <a class="home" href="index.html"><span class="hm">🏠</span><span class="ht">HEEYEONGA House Guide</span></a>
   <nav class="langs" aria-label="Language"><a href="ko.html" aria-label="KO">한국어</a><a class="on" aria-current="page" href="en.html" aria-label="EN">EN</a><a href="zh.html" aria-label="ZH">中文</a><a href="ja.html" aria-label="JA">日本語</a></nav>
 </div></header>
-<main class="wrap"><section class="hero" id="top"><div class="ico">🚶</div><h1>From Guii Station to HEEYEONGA</h1></section><p>Start from <strong>Guii Station Exit 2</strong> and follow the landmarks below in order.</p><h2 class="sec" id="Walking-Directions">Walking Directions</h2><ol><li><strong>Exit from Guii Station Exit 2.</strong><p class="step-desc">Walk straight along the main road.</p></li><li><strong>Keep walking straight.</strong><p class="step-desc">Continue under the elevated railway, staying on the same sidewalk.</p></li><li><strong>Turn left at GS25.</strong><p class="step-desc">When you see the GS25 convenience store, turn left around the corner.</p></li><li><strong>Enter the small side street next to Hyunjin Wallpaper Store.</strong><p class="step-desc">After turning left at GS25, walk straight until you see <strong>Hyunjin JI-MUL-PO / 현진지물포</strong>. Enter the small road next to it.</p></li><li><strong>Arrive at the building entrance.</strong><p class="step-desc">Enter the building. HEEYEONGA is Room 101 on the 1st floor.</p></li></ol><figure class="shot"><img src="assets/img_37f93d04c5.webp" alt="Walking Directions" loading="lazy" decoding="async" style="aspect-ratio:0.5371"></figure><p class="backlink"><a href="en.html">← Back to House Guide</a></p>
+<main class="wrap"><section class="hero" id="top"><div class="ico">🚶</div><h1>From Guii Station to HEEYEONGA</h1></section><p>Start from <strong>Guii Station Exit 2</strong> and follow the landmarks below in order.</p><h2 class="sec plain" id="Walking-Directions">Walking Directions</h2><ol><li><strong>Exit from Guii Station Exit 2.</strong><p class="step-desc">Walk straight along the main road.</p></li><li><strong>Keep walking straight.</strong><p class="step-desc">Continue under the elevated railway, staying on the same sidewalk.</p></li><li><strong>Turn left at GS25.</strong><p class="step-desc">When you see the GS25 convenience store, turn left around the corner.</p></li><li><strong>Enter the small side street next to Hyunjin Wallpaper Store.</strong><p class="step-desc">After turning left at GS25, walk straight until you see <strong>Hyunjin JI-MUL-PO / 현진지물포</strong>. Enter the small road next to it.</p></li><li><strong>Arrive at the building entrance.</strong><p class="step-desc">Enter the building. HEEYEONGA is Room 101 on the 1st floor.</p></li></ol><figure class="shot"><img src="assets/img_37f93d04c5.webp" alt="Walking Directions" loading="lazy" decoding="async" style="aspect-ratio:0.5371"></figure><p class="backlink"><a href="en.html">← Back to House Guide</a></p>
 <footer class="foot"><div class="brand">희연가 HEEYEONGA</div><div>희연가 HEEYEONGA</div></footer>
 </main>
 <a class="top-to" href="#top" aria-label="Top">↑</a>

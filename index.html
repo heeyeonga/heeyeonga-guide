@@ -24,7 +24,7 @@
 }
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Noto Sans JP","PingFang SC","Noto Sans SC","Segoe UI",Roboto,sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Noto Sans JP","PingFang SC","Noto Sans SC","Noto Sans KR","Noto Sans CJK KR","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size:16px;line-height:1.65;letter-spacing:-.01em}
 a{color:var(--accent);text-decoration:none}
 img{max-width:100%;height:auto;display:block}
@@ -75,6 +75,8 @@ img{max-width:100%;height:auto;display:block}
 h2.sec{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:800;
   margin:30px 0 10px;padding-top:6px;display:flex;align-items:center;gap:8px}
 h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+h2.sec.plain{text-transform:none;letter-spacing:-.015em;font-size:20px;color:var(--ink);font-weight:800;margin:26px 0 6px}
+h2.sec.plain::after{display:none}
 h3.sub{font-size:19px;margin:22px 0 8px;letter-spacing:-.015em}
 h4.sub4{font-size:16px;margin:16px 0 4px}
 p{margin:9px 0}
@@ -123,7 +125,10 @@ figure.shot figcaption{font-size:13px;color:var(--muted);padding:8px 12px}
 .picks{display:grid;gap:10px;margin:20px 0}
 .pick-card{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);
   border-radius:var(--radius);padding:16px 16px;box-shadow:var(--shadow);color:var(--ink)}
-.pick-card .fl{font-size:26px}
+.pick-card .fl{width:40px;height:40px;border-radius:12px;background:var(--accent-soft);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;letter-spacing:.02em;flex:0 0 auto}
+.ico.badge-solo{display:inline-flex;width:44px;height:44px;border-radius:13px;background:var(--accent-soft);color:var(--accent);
+  align-items:center;justify-content:center;font-size:17px;font-weight:800;margin-bottom:2px}
 .pick-card .pc-t{font-weight:800;font-size:17px;letter-spacing:-.01em}
 .pick-card .pc-s{font-size:13px;color:var(--muted);font-weight:600;margin-top:1px}
 .pick-card .pl-ar{margin-left:auto;color:var(--accent);font-weight:800}
@@ -159,7 +164,7 @@ figure.shot img{cursor:zoom-in}
   <a class="home" href="index.html"><span class="hm">🏠</span><span class="ht">희연가 HEEYEONGA</span></a>
   <nav class="langs" aria-label="Language"><a href="ko.html" aria-label="KO">한국어</a><a href="en.html" aria-label="EN">EN</a><a href="zh.html" aria-label="ZH">中文</a><a href="ja.html" aria-label="JA">日本語</a></nav>
 </div></header>
-<main class="wrap"><section class="hero pick" id="top"><div class="ico">💁🏻‍♀️</div><h1>HEEYEONGA<br>House Guide</h1><p class="lead"><strong>Welcome to HEEYEONGA.</strong></p></section><div class="callout"><span class="ci" aria-hidden="true">💡</span><div class="cb"><p><strong>Everything you need for your stay is in this guide.</strong></p><p>숙소 이용에 필요한 모든 정보가 이 가이드에 있습니다.</p><p>住宿所需的所有信息都在本指南中。</p><p>ご滞在に必要な情報はすべてこのガイドにあります。</p></div></div><nav class="picks" aria-label="Language"><a class="pick-card" href="index.html"><span class="fl">🇰</span><span><span class="pc-t">🇷 한국어</span><br><span class="pc-s">숙소 가이드</span></span><span class="pl-ar">→</span></a><a class="pick-card" href="index.html"><span class="fl">🇺</span><span><span class="pc-t">🇸 English</span><br><span class="pc-s">House Guide</span></span><span class="pl-ar">→</span></a><a class="pick-card" href="index.html"><span class="fl">🇨</span><span><span class="pc-t">🇳 中文</span><br><span class="pc-s">住宿指南</span></span><span class="pl-ar">→</span></a><a class="pick-card" href="index.html"><span class="fl">🇯</span><span><span class="pc-t">🇵 日本語</span><br><span class="pc-s">宿泊ガイド</span></span><span class="pl-ar">→</span></a></nav><section class="qr"><h2>Host Line QR Code</h2><div class="frame"><img src="assets/img_2d0a28766a.webp" alt="Host line QR code" width="280" height="280"></div></section>
+<main class="wrap"><section class="hero pick" id="top"><div class="ico">💁🏻‍♀️</div><h1>HEEYEONGA<br>House Guide</h1><p class="lead"><strong>Welcome to HEEYEONGA.</strong></p></section><div class="callout"><span class="ci" aria-hidden="true">💡</span><div class="cb"><p><strong>Everything you need for your stay is in this guide.</strong></p><p>숙소 이용에 필요한 모든 정보가 이 가이드에 있습니다.</p><p>住宿所需的所有信息都在本指南中。</p><p>ご滞在に必要な情報はすべてこのガイドにあります。</p></div></div><nav class="picks" aria-label="Language"><a class="pick-card" href="ko.html"><span class="fl">KO</span><span><span class="pc-t">한국어</span><br><span class="pc-s">숙소 가이드</span></span><span class="pl-ar">→</span></a><a class="pick-card" href="en.html"><span class="fl">EN</span><span><span class="pc-t">English</span><br><span class="pc-s">House Guide</span></span><span class="pl-ar">→</span></a><a class="pick-card" href="zh.html"><span class="fl">中</span><span><span class="pc-t">中文</span><br><span class="pc-s">住宿指南</span></span><span class="pl-ar">→</span></a><a class="pick-card" href="ja.html"><span class="fl">日</span><span><span class="pc-t">日本語</span><br><span class="pc-s">宿泊ガイド</span></span><span class="pl-ar">→</span></a></nav><section class="qr"><h2>Host Line QR Code</h2><div class="frame"><img src="assets/img_2d0a28766a.webp" alt="Host line QR code" width="280" height="280"></div></section>
 <footer class="foot"><div class="brand">희연가 HEEYEONGA</div><div>House Guide</div></footer>
 </main>
 <a class="top-to" href="#top" aria-label="Top">↑</a>
